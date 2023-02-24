@@ -12,3 +12,70 @@ body {
   background: linear-gradient(to right, #36d1dc, #5b86e5);
   padding: clamp(20px, 5vw, 50px) 10px 10px;
 }
+
+
+.container {
+  background-color: rgb(240, 240, 240);
+  border-radius: 5px;
+  border: black 1px;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  text-align: center;
+}
+
+h1{
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+h1 > span{
+  font-weight: 700;
+}
+
+.inputs-container{
+  display: flex;
+  column-gap: 50px;
+}
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: start;
+}
+
+.input-group > input{
+  border-radius: 10px;
+  height: 50px;
+  width: 300px;
+  padding-left: 15px;
+  font-size: 18px;
+  box-shadow: 1px black;
+}
+
+.imc-button{
+  margin-top: 40px;
+  height: 40px;
+  width: 200px;
+  background: rgb(223, 172, 5);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.bmi-value{
+  font-size: 40px;
+}
+
+.result{
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 30px;
+
+}
