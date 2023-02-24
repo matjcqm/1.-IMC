@@ -15,9 +15,13 @@ body {
 
 
 .container {
+  max-width: 850px;
   background-color: rgb(240, 240, 240);
   border-radius: 5px;
-  border: black 1px;
+  border: 1px solid black;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  margin: 0 auto;
   height: auto;
   width: auto;
   display: flex;
@@ -30,10 +34,11 @@ body {
 
 h1{
   font-weight: 400;
-  margin-top: 25px;
+  font-size: 40px;
+  font-family: raleway;
 }
 
-h1 > span{
+h1 span{
   font-weight: 700;
 }
 
@@ -49,13 +54,18 @@ h1 > span{
   text-align: start;
 }
 
-.input-group > input{
+.input-group input{
   border-radius: 10px;
   height: 50px;
   width: 300px;
   padding-left: 15px;
   font-size: 18px;
-  box-shadow: 1px black;
+  border: none;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.input-group input:focus{
+  outline: 2px solid #36d1dc;
 }
 
 .imc-button{
@@ -69,6 +79,10 @@ h1 > span{
   font-weight: 700;
 }
 
+.imc-button:focus{
+  outline: 2px solid #36d1dc;
+}
+
 .bmi-value{
   font-size: 40px;
 }
@@ -77,5 +91,27 @@ h1 > span{
   font-size: 22px;
   font-weight: 300;
   margin-bottom: 30px;
+}
 
+@media (max-width: 800px) {
+  .container{
+    max-width: 600px;
+  }
+
+  .inputs-container{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .input-group{
+    width: 100%;
+  }
+
+  .input-group input {
+    width: 100%;
+    min-width: auto;
+  }
 }
